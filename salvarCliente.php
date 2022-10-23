@@ -39,9 +39,13 @@
                 echo "<script>location.href='?page=listar';</script>";
             }
             break;
-        case 'excluir':
-            $sql = "DELETE FROM clientes WHERE id=".$_REQUEST["id"];
 
+        case 'excluir':
+            echo "OLA ".$_REQUEST["id"];
+            
+           /* $sql = "DELETE FROM clientes WHERE id=".$_REQUEST["id"];
+           
+        
             $res = $connection->query($sql);
 
             if($res==true){
@@ -51,6 +55,6 @@
                 echo "<script>alert('Não foi possivel Excluir');</script>";
                 echo "<script>location.href='?page=listar';</script>";
             }
-            break;
+            break;*/
     }
 ?>
